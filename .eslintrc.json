@@ -1,0 +1,134 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "plugins": ["import", "jsx-a11y", "react", "react-hooks", "simple-import-sort", "prettier"],
+    "extends": ["eslint:recommended", "plugin:jsx-a11y/recommended", "airbnb-typescript", "prettier"],
+    "parserOptions": {
+        "project": "./tsconfig.json",
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2019,
+        "sourceType": "module"
+    },
+    "rules": {
+        "@typescript-eslint/explicit-function-return-type": [
+            "error",
+            {
+                "allowExpressions": true
+            }
+        ],
+        "semi": "off",
+        "@typescript-eslint/semi": "error",
+        "prettier/prettier": "warn",
+        "camelcase": "off",
+        "import/prefer-default-export": "off",
+        "react/prop-types": "off",
+        "react/jsx-filename-extension": "off",
+        "react/jsx-props-no-spreading": "off",
+        "react/no-unused-prop-types": "off",
+        "react/react-in-jsx-scope": "off",
+        "react/require-default-props": "off",
+        "react/function-component-definition": [
+            0,
+            {
+                "namedComponents": "function-declaration"
+            }
+        ],
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+                "js": "never",
+                "jsx": "never",
+                "ts": "never",
+                "tsx": "never"
+            }
+        ],
+        "quotes": "off",
+        "jsx-a11y/anchor-is-valid": [
+            "error",
+            {
+                "components": ["Link"],
+                "specialLink": ["hrefLeft", "hrefRight"],
+                "aspects": ["invalidHref", "preferButton"]
+            }
+        ]
+    },
+    "overrides": [
+        {
+            "files": "**/*.+(ts|tsx)",
+            "parser": "@typescript-eslint/parser",
+            "plugins": ["@typescript-eslint/eslint-plugin"],
+            "extends": ["plugin:@typescript-eslint/recommended", "prettier"],
+            "rules": {
+                "simple-import-sort/imports": [
+                    "error",
+                    {
+                        "groups": [
+                            ["^react"],
+                            ["^@?\\w"],
+                            ["^@?\\w"],
+                            ["^(@/core)(/.*|$)"],
+                            ["^@?\\w"],
+                            ["^@?\\w"],
+                            ["^(@/redux)(/.*|$)"],
+                            ["^@?\\w"],
+                            ["^@?\\w"],
+                            ["^(@/components)(/.*|$)"],
+                            ["^@?\\w"],
+                            ["^@?\\w"],
+                            ["^(@mui)(/.*|$)"],
+                            ["^@?\\w"],
+                            ["^@?\\w"],
+                            ["^\\u0000"],
+                            ["^@?\\w"],
+                            ["^@?\\w"],
+                            ["^\\.\\.(?!/?$)", "^\\.\\./?$"],
+                            ["^@?\\w"],
+                            ["^@?\\w"],
+                            ["^\\./(?=.*/)(?!/?$)", "^\\.(?!/?$)", "^\\./?$"],
+                            ["^@?\\w"],
+                            ["^@?\\w"]
+                        ]
+                    }
+                ],
+                "@typescript-eslint/explicit-function-return-type": "off",
+                "@typescript-eslint/explicit-module-boundary-types": "off",
+                "no-use-before-define": [0],
+                "@typescript-eslint/no-use-before-define": [
+                    "error",
+                    { "functions": false, "classes": true, "variables": true }
+                ],
+                "@typescript-eslint/no-explicit-any": "off",
+                "@typescript-eslint/no-var-requires": "off",
+                "max-len": ["error", { "code": 120, "ignoreUrls": true }],
+                "react/jsx-first-prop-new-line": [2, "multiline"],
+                "react/jsx-max-props-per-line": [2, { "maximum": 1, "when": "multiline" }],
+                "@typescript-eslint/quotes": [
+                    2,
+                    "backtick",
+                    {
+                        "avoidEscape": true
+                    }
+                ]
+            }
+        }
+    ],
+    "settings": {
+        "import/resolver": {
+            "typescript": {
+                "project": "./tsconfig.json"
+            }
+        },
+        "react": {
+            "version": "detect"
+        }
+    }
+}

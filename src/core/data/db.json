@@ -1,0 +1,20 @@
+{
+    "books": [
+        {
+            "id": 1,
+            "title": "Book One",
+            "author": "Author One",
+            "stores": ["Store A", "Store B"]
+        },
+        {
+            "id": 2,
+            "title": "Book Two",
+            "author": "Author Two",
+            "stores": ["Store B"]
+        }
+    ],
+    "authors": [
+        { "id": 1, "name": "Author One" },
+        { "id": 2, "name": "Store B" }
+    ]
+}

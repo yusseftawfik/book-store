@@ -1,0 +1,13 @@
+{
+    "trailingComma": "all",
+    "singleQuote": true,
+    "tabWidth": 4,
+    "printWidth": 120,
+    "proseWrap": "preserve",
+    "useTabs": false,
+    "bracketSpacing": true,
+    "arrowParens": "always",
+    "importOrder": ["^react", "^@?\\w", "^[./]"],
+    "importOrderSeparation": true,
+    "importOrderSortSpecifiers": true
+}
