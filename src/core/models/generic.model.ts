@@ -1,5 +1,3 @@
-import { JSX } from 'react';
-
 import { SvgIconProps } from '@mui/material/SvgIcon';
 
 import { PRIVATEPATHS } from '../enums/paths.enums';
@@ -17,14 +15,14 @@ export interface LocalizedResponse {
 }
 
 export interface ISidebarItemModel {
-    label?: string;
-    icon?: (props: SvgIconProps) => JSX.Element | any;
-    path?: PRIVATEPATHS;
-    function?: () => void;
-    isButton?: boolean;
-    subMenu?: ISidebarItemModel[];
-    divider?: boolean;
-    disabled?: boolean;
+    label: string;
+    icon: (props: SvgIconProps) => JSX.Element | any;
+    path: PRIVATEPATHS;
+}
+
+export interface PrivateRoute {
+    path: PRIVATEPATHS;
+    component: () => JSX.Element;
 }
 
 export interface LightModel {

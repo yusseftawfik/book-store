@@ -1,16 +1,6 @@
 {
     "compilerOptions": {
         "baseUrl": ".",
-        "paths": {
-            "@/components/*": ["src/components/*"],
-            "@/core/*": ["src/core/*"],
-            "@/layout/*": ["src/layout/*"],
-            "@/pages/*": ["src/pages/*"],
-            "@/redux/*": ["src/redux/*"],
-            "@/services/*": ["src/services/*"],
-            "@/styles/*": ["src/styles/*"],
-            "@/utils/*": ["src/utils/*"]
-        },
         "target": "ES6",
         "module": "ESNext",
         "lib": ["DOM", "DOM.Iterable", "ESNext"],
@@ -25,6 +15,6 @@
         "noEmit": true,
         "jsx": "react-jsx"
     },
-    "include": ["src", "tailwind.config.js"],
+    "include": ["src", "tailwind.config.js", "svg.d.ts"],
     "exclude": ["node_modules", "build"]
 }

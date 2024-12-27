@@ -1,3 +1,6 @@
 export enum PRIVATEPATHS {
-    Dashboard = `/dashboard`,
+    Shop = `/`,
+    Stores = `/stores`,
+    Author = `/author`,
+    Books = `/books`,
 }
