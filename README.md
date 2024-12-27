@@ -1,52 +1,55 @@
 # Bookstore Frontend
 
-This is a React-based frontend application for managing a bookstore. It demonstrates CRUD operations for books, authors, and stores using API stubs.
+## Description
 
-## Folder Structure
-
--   **src/components**: Reusable components
--   **src/pages**: Page components
--   **src/redux**: State management with Redux Toolkit
--   **src/services**: API services
--   **src/styles**: Global styles
--   **src/utils**: Utility functions
-
-## Prerequisites
-
--   Node.js (>= 16.x)
--   npm or yarn
+This is the frontend application for the Ovarc Book Store. It is built using React and TypeScript, and it leverages various libraries such as Redux, TailwindCSS, and Material-UI for state management, styling, and UI components.
 
 ## Installation
 
-1. Clone the repository:
-    ```bash
-    git clone <repo-url>
-    cd bookstore-frontend
-    ```
-2. Install dependencies:
-    ```bash
-    npm install
-    ```
-3. Run the development server:
-    ```bash
-    npm start
-    ```
-
-## Optional: Run JSON Server
-
-If you want to use JSON Server as a backend:
+To install the dependencies, run the following command:
 
 ```bash
-json-server --watch data/db.json --port 3001
+npm install
 ```
 
-## Docker Setup
+## Usage
 
-1. Build the Docker image:
-    ```bash
-    docker build -t bookstore-frontend .
-    ```
-2. Run the container:
-    ```bash
-    docker run -p 3000:3000 bookstore-frontend
-    ```
+To start the development server, use:
+
+```bash
+npm start
+```
+
+To build the project for production, use:
+
+```bash
+npm run build
+```
+
+To run tests, use:
+
+```bash
+npm test
+```
+
+To lint the code, use:
+
+```bash
+npm run lint
+```
+
+To fix linting issues, use:
+
+```bash
+npm run lint:fix
+```
+
+To format the code, use:
+
+```bash
+npm run format
+```
+
+## License
+
+This project is licensed under the MIT License.
