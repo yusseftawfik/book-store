@@ -27,13 +27,13 @@ const SideBar: FC = (): ReactElement => (
         <div className="h-full p-5">
             <img src="/logo.svg" alt="logo" width={180} height={45} />
             <List className="!mt-5">
-                {sidebarItems.map((item) => (
+                {sidebarItems?.map((item) => (
                     <Link to={item.path} data-key="t-analytics">
                         <ListItem disablePadding>
                             <ListItemButton>
-                                <ListItemIcon>
+                                {/* <ListItemIcon>
                                     <SvgIcon component={item?.icon} className="hover:!text-[#BF5523]" />
-                                </ListItemIcon>
+                                </ListItemIcon> */}
                                 <ListItemText primary={item.label} />
                             </ListItemButton>
                         </ListItem>

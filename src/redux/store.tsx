@@ -3,7 +3,9 @@ import { setupListeners } from '@reduxjs/toolkit/query/react';
 import { Persistor, persistReducer, persistStore } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 
+import { authorsReducer } from './features/authors.slice';
 import { booksReducer } from './features/books.slice';
+import { storesReducer } from './features/stores.slice';
 
 // ---------------------------------------------------------------------------------------------------------------------
 const persistConfig = {
@@ -13,6 +15,8 @@ const persistConfig = {
 // ---------------------------------------------------------------------------------------------------------------------
 export const combinedReducers: Reducer = combineReducers({
     bookState: booksReducer,
+    authorState: authorsReducer,
+    storeState: storesReducer,
 });
 // ---------------------------------------------------------------------------------------------------------------------
 export type RootState = ReturnType<typeof combinedReducers>;

@@ -14,28 +14,25 @@ type Props = {
     type: `store` | `book` | `author`;
 };
 
-const CardContainer: FC<Props> = ({ title, link, items, type }): ReactElement => {
-    //--------------------------------------------------------------------
-    const cardType = {
-        store: StoreCard,
-        book: BookCard,
-        author: AuthorCard,
-    };
-    //--------------------------------------------------------------------
-    return (
-        <div className="flex flex-col gap-5 overflow-x-hidden">
-            <div className="flex w-full items-center justify-between">
-                <h2>{title}</h2>
-                <Link to={link}>View All</Link>
-            </div>
-            <div className="flex w-full justify-start gap-5 overflow-x-scroll">
-                {items.map((item, index) => {
-                    const CardComponent = cardType[type as keyof typeof cardType];
-                    return <CardComponent key={index} {...item} />;
-                })}
+const CardContainer: FC<Props> = ({ title, link, items, type }): ReactElement => (
+    <div className="flex flex-col gap-5">
+        <div className="flex w-full items-center justify-between">
+            <h2 className="text-2xl font-medium">{title}</h2>
+            <Link
+                to={link}
+                className="rounded-md bg-[#D86128] px-4 py-2 text-sm font-medium text-white hover:bg-[#BF5523]"
+            >
+                View All
+            </Link>
+        </div>
+        <div className="-mx-7">
+            <div className="scroll-container">
+                {type === `store` && items?.map((item, index) => <StoreCard key={index} item={item} />)}
+                {type === `book` && items?.map((item, index) => <BookCard key={index} item={item} />)}
+                {type === `author` && items?.map((item, index) => <AuthorCard key={index} item={item} />)}
             </div>
         </div>
-    );
-};
+    </div>
+);
 
 export default CardContainer;

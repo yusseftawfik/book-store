@@ -16,7 +16,7 @@ export interface LocalizedResponse {
 
 export interface ISidebarItemModel {
     label: string;
-    icon: (props: SvgIconProps) => JSX.Element | any;
+    icon?: (props: SvgIconProps) => JSX.Element | any;
     path: PRIVATEPATHS;
 }
 

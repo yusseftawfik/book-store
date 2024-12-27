@@ -1,0 +1,107 @@
+{
+    "books": [
+        {
+            "id": 1,
+            "title": "To Kill a Mockingbird",
+            "author": "by Brooklyn Simmons ",
+            "stores": [
+                {
+                    "id": 2,
+                    "title": "Book Two",
+                    "author": "Author Two",
+                    "books": ["Store B"],
+                    "cover": "/logoIcon.svg"
+                },
+                {
+                    "id": 2,
+                    "title": "Book Two",
+                    "author": "Author Two",
+                    "books": ["Store B"],
+                    "cover": "/logoIcon.svg"
+                }
+            ],
+            "cover": "/logoIcon.svg"
+        },
+        {
+            "id": 2,
+            "title": "Book Two",
+            "author": "Author Two",
+            "stores": ["Store B"],
+            "cover": "/logoIcon.svg"
+        },
+        {
+            "id": 2,
+            "title": "Book Two",
+            "author": "Author Two",
+            "stores": ["Store B"],
+            "cover": "/logoIcon.svg"
+        },
+        {
+            "id": 2,
+            "title": "Book Two",
+            "author": "Author Two",
+            "stores": ["Store B"],
+            "cover": "/logoIcon.svg"
+        }
+    ],
+    "authors": [
+        { "id": 2, "name": "Theresa Webb", "booksPublished": 12, "avatar": "/Theresa.png" },
+        { "id": 1, "name": "Serenity Cooper", "booksPublished": 29, "avatar": "/Serenity.png" },
+        { "id": 2, "name": "Jacob Warren", "booksPublished": 10, "avatar": "/Jacob.png" }
+    ],
+    "stores": [
+        {
+            "id": 1,
+            "title": "To Kill a Mockingbird",
+            "author": "by Brooklyn Simmons ",
+
+            "cover": "/logoIcon.svg"
+        },
+        {
+            "id": 2,
+            "title": "Book Two",
+            "author": "Author Two",
+            "books": [
+                {
+                    "id": 2,
+                    "title": "Book Two",
+                    "author": "Author Two",
+                    "stores": ["Store B"],
+                    "price": 7,
+                    "cover": "/logoIcon.svg"
+                },
+                {
+                    "id": 2,
+                    "title": "Book Two",
+                    "author": "Author Two",
+                    "stores": ["Store B"],
+                    "price": 4,
+                    "cover": "/logoIcon.svg"
+                }
+            ],
+            "cover": "/logoIcon.svg"
+        },
+        {
+            "id": 2,
+            "title": "Book Two",
+            "author": "Author Two",
+            "books": [
+                {
+                    "id": 2,
+                    "title": "Book Two",
+                    "author": "Author Two",
+                    "stores": ["Store B"],
+                    "cover": "/logoIcon.svg"
+                },
+                {
+                    "id": 2,
+                    "title": "Book Two",
+                    "author": "Author Two",
+                    "stores": ["Store B"],
+                    "cover": "/logoIcon.svg"
+                }
+            ],
+            "cover": "/logoIcon.svg"
+        }
+    ]
+}
