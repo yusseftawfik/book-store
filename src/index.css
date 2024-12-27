@@ -17,6 +17,20 @@ body {
     }
 }
 
+* {
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        display: none;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        display: none;
+    }
+}
+
 .scroll-container {
     width: 100%;
     overflow: hidden;

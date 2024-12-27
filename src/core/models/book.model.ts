@@ -7,4 +7,5 @@ export interface IBook {
     stores: Array<IStore>;
     cover: string;
     price?: number;
+    color?: `primary` | `secondary`;
 }

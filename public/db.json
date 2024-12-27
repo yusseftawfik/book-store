@@ -3,45 +3,72 @@
         {
             "id": 1,
             "title": "To Kill a Mockingbird",
-            "author": "by Brooklyn Simmons ",
+            "author": "Brooklyn Simmons ",
             "stores": [
                 {
                     "id": 2,
-                    "title": "Book Two",
-                    "author": "Author Two",
-                    "books": ["Store B"],
-                    "cover": "/logoIcon.svg"
+                    "title": "Cover Discovery",
+                    "price": 15
                 },
                 {
                     "id": 2,
-                    "title": "Book Two",
-                    "author": "Author Two",
-                    "books": ["Store B"],
-                    "cover": "/logoIcon.svg"
+                    "title": "Bookmark My Word",
+                    "price": 17.5
+                },
+                {
+                    "id": 2,
+                    "title": "To Kill a Mockingbird",
+                    "price": 17.5
+                },
+                {
+                    "id": 2,
+                    "title": "To Kill a Mockingbird",
+                    "price": 17.5
                 }
             ],
-            "cover": "/logoIcon.svg"
+            "color": "primary"
         },
         {
             "id": 2,
-            "title": "Book Two",
-            "author": "Author Two",
-            "stores": ["Store B"],
-            "cover": "/logoIcon.svg"
+            "title": "Cats And Agents",
+            "author": "Cody Hudson",
+            "stores": [
+                {
+                    "id": 2,
+                    "title": "Cover Discovery",
+                    "price": 17.5
+                },
+                {
+                    "id": 2,
+                    "title": "Bookmark My Word",
+                    "price": 17.5
+                }
+            ],
+            "color": "primary"
         },
         {
             "id": 2,
-            "title": "Book Two",
-            "author": "Author Two",
-            "stores": ["Store B"],
-            "cover": "/logoIcon.svg"
+            "title": "Lion Of Yesterday",
+            "author": "Brooklyn Simmons",
+            "stores": [
+                {
+                    "id": 2,
+                    "title": "Bookmark My Word",
+                    "price": 17.5
+                },
+                {
+                    "id": 2,
+                    "title": "Cover Discovery",
+                    "price": 17.5
+                }
+            ],
+            "color": "secondary"
         },
         {
             "id": 2,
-            "title": "Book Two",
-            "author": "Author Two",
-            "stores": ["Store B"],
-            "cover": "/logoIcon.svg"
+            "title": "Cover Discovery",
+            "author": "Theresa Webb",
+            "color": "secondary"
         }
     ],
     "authors": [
@@ -54,8 +81,7 @@
             "id": 1,
             "title": "To Kill a Mockingbird",
             "author": "by Brooklyn Simmons ",
-
-            "cover": "/logoIcon.svg"
+            "color": "primary"
         },
         {
             "id": 2,
@@ -79,7 +105,7 @@
                     "cover": "/logoIcon.svg"
                 }
             ],
-            "cover": "/logoIcon.svg"
+            "color": "primary"
         },
         {
             "id": 2,
@@ -101,7 +127,7 @@
                     "cover": "/logoIcon.svg"
                 }
             ],
-            "cover": "/logoIcon.svg"
+            "color": "secondary"
         }
     ]
 }

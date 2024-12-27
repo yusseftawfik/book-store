@@ -9,7 +9,7 @@ type Props = {
 
 const AuthorCard: FC<Props> = ({ item }) => (
     <div className="grid h-52 !min-w-[450px] grid-cols-[1fr,3fr] gap-4 rounded-lg bg-white px-5 py-6 shadow-sm">
-        <div className="h-full w-32 overflow-hidden rounded-md bg-[#FFEBE1]">
+        <div className="h-full w-32 overflow-hidden rounded-md bg-[#FFEBE1] shadow-sm">
             <img src={item?.avatar} alt={item?.name} className="h-full w-full object-cover object-center" />
         </div>
         <div className="flex h-full w-full flex-col items-start justify-between">

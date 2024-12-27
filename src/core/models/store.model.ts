@@ -5,6 +5,6 @@ export interface IStore {
     title: string;
     author: string;
     books: Array<IBook>;
-    cover: string;
+    color: `primary` | `secondary`;
     price?: number;
 }
